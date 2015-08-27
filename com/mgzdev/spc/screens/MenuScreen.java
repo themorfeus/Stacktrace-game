@@ -65,26 +65,30 @@ public class MenuScreen implements Screen{
 
         //TagIntArray tia = new TagIntArray("passcodes",MemBanks.passcodes);
         //t.addTag(tia);
+        
+        for (int i = 0; i < 9; i++) {
+            t.addTag(new TagInt("p" + Integer.toString(i++), MemBanks.passcodes[i]));
+        }
 
-        TagInt p1 = new TagInt("p1", MemBanks.passcodes[0]);
-        TagInt p2 = new TagInt("p2", MemBanks.passcodes[1]);
-        TagInt p3 = new TagInt("p3", MemBanks.passcodes[2]);
-        TagInt p4 = new TagInt("p4", MemBanks.passcodes[3]);
-        TagInt p5 = new TagInt("p5", MemBanks.passcodes[4]);
-        TagInt p6 = new TagInt("p6", MemBanks.passcodes[5]);
-        TagInt p7 = new TagInt("p7", MemBanks.passcodes[6]);
-        TagInt p8 = new TagInt("p8", MemBanks.passcodes[7]);
-        TagInt p9 = new TagInt("p9", MemBanks.passcodes[8]);
+        // TagInt p1 = new TagInt("p1", MemBanks.passcodes[0]);
+        // TagInt p2 = new TagInt("p2", MemBanks.passcodes[1]);
+        // TagInt p3 = new TagInt("p3", MemBanks.passcodes[2]);
+        // TagInt p4 = new TagInt("p4", MemBanks.passcodes[3]);
+        // TagInt p5 = new TagInt("p5", MemBanks.passcodes[4]);
+        // TagInt p6 = new TagInt("p6", MemBanks.passcodes[5]);
+        // TagInt p7 = new TagInt("p7", MemBanks.passcodes[6]);
+        // TagInt p8 = new TagInt("p8", MemBanks.passcodes[7]);
+        // TagInt p9 = new TagInt("p9", MemBanks.passcodes[8]);
 
-        t.addTag(p1);
-        t.addTag(p2);
-        t.addTag(p3);
-        t.addTag(p4);
-        t.addTag(p5);
-        t.addTag(p6);
-        t.addTag(p7);
-        t.addTag(p8);
-        t.addTag(p9);
+        // t.addTag(p1);
+        // t.addTag(p2);
+        // t.addTag(p3);
+        // t.addTag(p4);
+        // t.addTag(p5);
+        // t.addTag(p6);
+        // t.addTag(p7);
+        // t.addTag(p8);
+        // t.addTag(p9);
 
         System.out.println(t.toString());
         try{
